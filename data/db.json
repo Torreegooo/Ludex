@@ -1,0 +1,30 @@
+{
+  "version": 33,
+  "users": [
+    {
+      "id": "admin_david",
+      "name": "David Torrego",
+      "email": "davidtorrego1@gmail.com",
+      "password": "DavidAdmin2026!",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "location": "Madrid Centro (Sede Central)",
+      "phone": "+34 600 000 001",
+      "rating": 5,
+      "totalDeals": 150,
+      "verificationLevel": "Administrador Oficial",
+      "memberSince": "Septiembre 2026",
+      "punctualityScore": 100,
+      "itemAccuracyScore": 100,
+      "communicationScore": 100,
+      "publicKeyFingerprint": "LUDEX-ADMIN-ROOT:0001:FFFF:9999",
+      "phoneVerified": true,
+      "role": "admin"
+    }
+  ],
+  "games": [],
+  "conversations": [],
+  "messages": {},
+  "transactions": [],
+  "reviews": [],
+  "broadcasts": []
+}

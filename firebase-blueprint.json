@@ -1,0 +1,57 @@
+{
+  "entities": {
+    "games": {
+      "title": "games",
+      "description": "Videojuegos y consolas publicados en el marketplace para sincronización entre dispositivos",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "price": { "type": "number" },
+        "platform": { "type": "string" },
+        "condition": { "type": "string" },
+        "sellerId": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["title", "price", "platform"]
+    },
+    "conversations": {
+      "title": "conversations",
+      "description": "Conversaciones de chat entre comprador y vendedor",
+      "type": "object",
+      "properties": {
+        "gameId": { "type": "string" },
+        "buyerId": { "type": "string" },
+        "sellerId": { "type": "string" }
+      }
+    },
+    "messages": {
+      "title": "messages",
+      "description": "Mensajes seguros en tiempo real",
+      "type": "object",
+      "properties": {
+        "conversationId": { "type": "string" },
+        "senderId": { "type": "string" },
+        "text": { "type": "string" },
+        "timestamp": { "type": "string" }
+      }
+    },
+    "transactions": {
+      "title": "transactions",
+      "description": "Tratos y entregas presenciales verificadas con OTP",
+      "type": "object",
+      "properties": {
+        "gameId": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "users": {
+      "title": "users",
+      "description": "Cuentas y perfiles de usuarios registrados",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" }
+      }
+    }
+  }
+}

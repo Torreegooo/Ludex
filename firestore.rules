@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /games/{gameId} {
+      allow read, delete: if true;
+      // Allow only user-created ads, prevent legacy demo seed games from re-seeding
+      allow create, update: if !gameId.matches('^game_(3do|3ds|amiga|atari|cdi|dc|gb|gbc|gg|gw|jaguar|md|megacd|msx|n64|nds|neocd|neogeo|nes|ngc|ngp|nsw|pc|pce|poke|ps1|ps3|ps4|ps5|psp|psvita|psvr2|retro|saturn|sms|snes|steamdeck|sw2|vb|wii|wiiu|wonderswan|x360|xbox|xboxone)_.*');
+    }
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+    match /conversations/{convId} {
+      allow read, write: if true;
+    }
+    match /messages/{msgId} {
+      allow read, write: if true;
+    }
+    match /transactions/{txId} {
+      allow read, write: if true;
+    }
+    match /reviews/{revId} {
+      allow read, write: if true;
+    }
+    match /password_resets/{email} {
+      allow read, write: if true;
+    }
+  }
+}

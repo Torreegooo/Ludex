@@ -1,0 +1,6 @@
+{
+  "name": "LUDEX | Mercado Seguro de Videojuegos de Segunda Mano",
+  "description": "Plataforma profesional de compraventa y subastas de videojuegos físicos de segunda mano con tratos presenciales en mano y verificación de entrega.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
